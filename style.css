@@ -1,0 +1,85 @@
+.calculator{
+    width: 300px;   
+    background-color: #ebb9de; 
+    margin: 50px auto 10px auto;
+    padding: 7px;
+    border-radius: 5px;
+    display: block;
+    
+    }
+    h1{
+        text-align: center;
+    }
+    
+    #layar{
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #d3b8b8;
+        font-size: 50px;
+        font-weight: bold;
+        color: rgb(245, 137, 218);
+        padding: 7px 5px;
+        text-align: right;
+        outline: none;
+    }
+    
+    .container-tombol{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .tombol{
+        display: flex;
+        width: 25%;
+        font-size: 20px;
+        color: rgb(24, 23, 23);
+        font-weight: bold;
+        height: 70px;
+        border: 1px solid #a9d9f0;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tombol:nth-child(4n+1) {
+        border-left: 1px solid #a9d9f0;
+    }
+    
+    .tombol:hover{
+        background-color: #8acaf0;
+        cursor: pointer;
+    }
+    #nol{
+        flex-grow: 2;
+    }
+    #operator{
+        background-color: #fcb7c1;
+    }
+    
+    #hitung{
+        background-color: #e27998;
+        color: white;
+    }
+    
+    #hitung:hover{
+        background-color: #8acaf0;
+        cursor: pointer;
+    }
+    
+    footer {
+        padding: 5px;
+      }
+      footer li {
+        list-style: none;
+      }
+      footer a {
+        color:black;
+      }
+      
+    /*HP*/
+    @media (max-width: 576px) {
+        .calculator {
+            width: 90%;
+            height: 90%;
+        }
+    }
